@@ -3,8 +3,8 @@
 Scenario: Recover across restarts of the server
 that runs the visit-counter
   Given the server running visit-counter
-  is restarting.
-  
+  is restarting
+
   When a new visitor is trying to enter
   
   Then stop the visitor from entering till server finishes restarting.
