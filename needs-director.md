@@ -8,6 +8,8 @@ Scenario: Show patient visits during working days and holidays
 
 Scenario: Compute parking slots to reserve for visiting specialists
 
-  Given Number of available parking slots and number of incoming visiting specialists on a particular day
-  When Number of available parking slots becomes equal to number of incoming visiting specialists  on a particular day yet to arrive
+  Given Number of available parking slots and number of incoming 
+  visiting specialists on a particular day
+  When Number of available parking slots becomes equal to
+  number of incoming visiting specialists  on a particular day yet to arrive
   Then Do not allow others to park in the parking area
