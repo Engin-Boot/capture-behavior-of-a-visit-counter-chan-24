@@ -2,12 +2,12 @@
 
 Scenario: Report visitor trends during a week of operation
 
-  Given
-  When
-  Then
+  Given Data of visitors in a week
+  When Many visitors do not have meals in hospital canteen
+  Then Reduce the number of meals prepared in canteen in the next week
 
 Scenario: Alert when seating capacity is full
 
-  Given
-  When
-  Then
+  Given Total number of seats and visitor count
+  When A new visitor enters and visitor count equals number of seats
+  Then Alert the staff for alternate arrangement
